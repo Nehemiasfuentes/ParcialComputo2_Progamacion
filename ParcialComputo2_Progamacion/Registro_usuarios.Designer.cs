@@ -90,7 +90,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombres.Location = new System.Drawing.Point(118, 73);
-            this.textBoxNombres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombres.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombres.Name = "textBoxNombres";
             this.textBoxNombres.Size = new System.Drawing.Size(200, 26);
             this.textBoxNombres.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxApellidos.Location = new System.Drawing.Point(422, 75);
-            this.textBoxApellidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxApellidos.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxApellidos.Name = "textBoxApellidos";
             this.textBoxApellidos.Size = new System.Drawing.Size(179, 26);
             this.textBoxApellidos.TabIndex = 5;
@@ -108,7 +108,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorreo.Location = new System.Drawing.Point(104, 139);
-            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(496, 26);
             this.textBoxCorreo.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreUsuario.Location = new System.Drawing.Point(166, 202);
-            this.textBoxNombreUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombreUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
             this.textBoxNombreUsuario.Size = new System.Drawing.Size(215, 26);
             this.textBoxNombreUsuario.TabIndex = 7;
@@ -126,7 +126,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContrasenia.Location = new System.Drawing.Point(193, 258);
-            this.textBoxContrasenia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxContrasenia.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxContrasenia.Name = "textBoxContrasenia";
             this.textBoxContrasenia.Size = new System.Drawing.Size(215, 26);
             this.textBoxContrasenia.TabIndex = 9;
@@ -147,12 +147,13 @@ namespace ParcialComputo2_Progamacion
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(455, 184);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 139);
             this.button1.TabIndex = 10;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Registro_usuarios
             // 
@@ -170,9 +171,9 @@ namespace ParcialComputo2_Progamacion
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelNombre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Registro_usuarios";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Registro Usuarios";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.ResumeLayout(false);

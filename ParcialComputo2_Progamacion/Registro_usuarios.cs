@@ -16,5 +16,10 @@ namespace ParcialComputo2_Progamacion
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
