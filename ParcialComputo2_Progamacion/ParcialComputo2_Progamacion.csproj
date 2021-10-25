@@ -117,6 +117,12 @@
     <Compile Include="Inicios_sesion_usuarios.Designer.cs">
       <DependentUpon>Inicios_sesion_usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_principal.Designer.cs">
+      <DependentUpon>Menu_principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Operaciones_base_de_datos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +133,12 @@
       <DependentUpon>Registro_usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Compile Include="Usuarios_registrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_registrados.Designer.cs">
+      <DependentUpon>Usuarios_registrados.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Datos_de_usuario.resx">
       <DependentUpon>Datos_de_usuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicios_sesion_usuarios.resx">
       <DependentUpon>Inicios_sesion_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_principal.resx">
+      <DependentUpon>Menu_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="Registro_usuarios.resx">
       <DependentUpon>Registro_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_registrados.resx">
+      <DependentUpon>Usuarios_registrados.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
