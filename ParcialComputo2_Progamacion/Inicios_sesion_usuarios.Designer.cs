@@ -38,7 +38,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.Location = new System.Drawing.Point(52, 64);
-            this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.Name = "dataGridViewInicios_sesion_usuarios_tabla_userlogs";
             this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.RowHeadersWidth = 51;
             this.dataGridViewInicios_sesion_usuarios_tabla_userlogs.RowTemplate.Height = 24;
@@ -51,7 +51,7 @@ namespace ParcialComputo2_Progamacion
             this.buttonRegresarMenu.BackColor = System.Drawing.Color.MistyRose;
             this.buttonRegresarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegresarMenu.Location = new System.Drawing.Point(32, 20);
-            this.buttonRegresarMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRegresarMenu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRegresarMenu.Name = "buttonRegresarMenu";
             this.buttonRegresarMenu.Size = new System.Drawing.Size(61, 23);
             this.buttonRegresarMenu.TabIndex = 1;
@@ -66,11 +66,12 @@ namespace ParcialComputo2_Progamacion
             this.ClientSize = new System.Drawing.Size(435, 366);
             this.Controls.Add(this.buttonRegresarMenu);
             this.Controls.Add(this.dataGridViewInicios_sesion_usuarios_tabla_userlogs);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicios_sesion_usuarios";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Inicios Sesion Usuarios";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            this.Load += new System.EventHandler(this.Inicios_sesion_usuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInicios_sesion_usuarios_tabla_userlogs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

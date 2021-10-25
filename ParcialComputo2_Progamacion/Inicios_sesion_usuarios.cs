@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ParcialComputo2_Progamacion
 {
@@ -19,7 +20,29 @@ namespace ParcialComputo2_Progamacion
 
         private void buttonRegresarMenu_Click(object sender, EventArgs e)
         {
+            new Menu_principal().Show();
+            this.Hide();
+        }
+        private void Inicios_sesion_usuarios_Load(object sender, EventArgs e)
+        {
+            dataGridViewInicios_sesion_usuarios_tabla_userlogs.Rows.Clear();
+            dataGridViewInicios_sesion_usuarios_tabla_userlogs.Columns.Clear();
 
+            dataGridViewInicios_sesion_usuarios_tabla_userlogs.Columns.Add("codLogUser", "Codigo Log Usuario");
+            dataGridViewInicios_sesion_usuarios_tabla_userlogs.Columns.Add("Nombreusuariosistema", "Usuario");
+            dataGridViewInicios_sesion_usuarios_tabla_userlogs.Columns.Add("FechadeInicioSesion", "Inicio Sesion");
+
+            Usuario usuario = new Usuario();
+
+            MySqlDataReader datos = usuario.Seleccionar_registros_logs_usuarios();
+
+            while (datos.Read())
+            {
+                dataGridViewInicios_sesion_usuarios_tabla_userlogs.Rows.Add(
+                datos.GetValue(0),
+                datos.GetValue(1),
+                datos.GetValue(2));
+            }
         }
     }
 }

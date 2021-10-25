@@ -63,7 +63,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreUsuario.Location = new System.Drawing.Point(39, 124);
-            this.textBoxNombreUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombreUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombreUsuario.Multiline = true;
             this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
             this.textBoxNombreUsuario.Size = new System.Drawing.Size(289, 28);
@@ -73,7 +73,7 @@ namespace ParcialComputo2_Progamacion
             // 
             this.textBoxContraseñaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContraseñaUsuario.Location = new System.Drawing.Point(39, 234);
-            this.textBoxContraseñaUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxContraseñaUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxContraseñaUsuario.Multiline = true;
             this.textBoxContraseñaUsuario.Name = "textBoxContraseñaUsuario";
             this.textBoxContraseñaUsuario.Size = new System.Drawing.Size(289, 28);
@@ -84,7 +84,7 @@ namespace ParcialComputo2_Progamacion
             this.buttonIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciarSesion.Location = new System.Drawing.Point(84, 301);
-            this.buttonIniciarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonIniciarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.buttonIniciarSesion.Name = "buttonIniciarSesion";
             this.buttonIniciarSesion.Size = new System.Drawing.Size(212, 46);
             this.buttonIniciarSesion.TabIndex = 5;
@@ -97,8 +97,8 @@ namespace ParcialComputo2_Progamacion
             this.buttonRegistrarme.AutoSize = true;
             this.buttonRegistrarme.BackColor = System.Drawing.Color.Plum;
             this.buttonRegistrarme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegistrarme.Location = new System.Drawing.Point(146, 388);
-            this.buttonRegistrarme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRegistrarme.Location = new System.Drawing.Point(132, 376);
+            this.buttonRegistrarme.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRegistrarme.Name = "buttonRegistrarme";
             this.buttonRegistrarme.Size = new System.Drawing.Size(106, 32);
             this.buttonRegistrarme.TabIndex = 6;
@@ -117,9 +117,9 @@ namespace ParcialComputo2_Progamacion
             this.Controls.Add(this.textBoxNombreUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InicioSesion";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Inicio Sesion";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.ResumeLayout(false);
