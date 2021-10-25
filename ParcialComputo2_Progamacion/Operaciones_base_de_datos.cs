@@ -24,10 +24,12 @@ namespace ParcialComputo2_Progamacion
         {
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            conexion_base_de_datos.mysqlcomando = new MySqlCommand(consultasql);
+            conexion_base_de_datos.mysqlcomando = new MySqlCommand(consultasql, conexion_base_de_datos.Cerrarconexion());
+            conexion_base_de_datos.Abrirconexion();
             adapter.InsertCommand = conexion_base_de_datos.mysqlcomando;
             adapter.InsertCommand.ExecuteNonQuery();
             conexion_base_de_datos.mysqlcomando.Dispose();
+            conexion_base_de_datos.Cerrarconexion();
         }
     }
 }

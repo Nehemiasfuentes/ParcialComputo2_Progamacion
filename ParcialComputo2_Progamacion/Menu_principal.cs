@@ -23,7 +23,7 @@ namespace ParcialComputo2_Progamacion
             if (InicioSesion.nombredeusuarioactivo.ToString() != "Admin")
             {
                 metroTile1.Visible = false;
-                metroTile2.Visible = false;
+                metroTile3.Visible = false;
             }
             else
             {

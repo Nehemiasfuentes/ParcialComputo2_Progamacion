@@ -13,7 +13,7 @@ namespace ParcialComputo2_Progamacion
         public string Nombresusuario { get; set; }
         public string Apellidosusuario { get; set; }
         public string Correoelectronico { get; set; }
-        public DateTime Fechaderegistro { get; set; }
+        public string Fechaderegistro { get; set; }
         public string Nombreusuariosistema { get; set; }
         public string Contraseniausuariosistema { get; set; }
 
@@ -43,7 +43,7 @@ namespace ParcialComputo2_Progamacion
         }
         public void Capturar_inicio_sesion_usuario()
         {
-            string consultasql = "INSERT INTO userlog(codLog, username, timeLoggedln) VALUES('','" + Nombreusuariosistema + "','" + DateTime.Now.ToString() + "')";
+            string consultasql = "INSERT INTO userlog(codLog, username, timeloggedln) VALUES('','" + Nombreusuariosistema + "','" + DateTime.Now.ToString() + "')";
             operaciones_Base_De_Datos.Ejecutar_consultas_a_base_de_datos(consultasql);
         }
         public MySqlDataReader Seleccionar_registros_logs_usuarios()

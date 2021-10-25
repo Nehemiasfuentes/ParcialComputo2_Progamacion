@@ -57,7 +57,7 @@ namespace ParcialComputo2_Progamacion
                 usuario.Nombresusuario = textBoxNombres.Text;
                 usuario.Apellidosusuario = textBoxApellidos.Text;
                 usuario.Correoelectronico = textBoxCorreo.Text;
-                usuario.Fechaderegistro = DateTime.Now;
+                usuario.Fechaderegistro = DateTime.Now.ToString();
                 usuario.Nombreusuariosistema = textBoxNombreUsuario.Text;
                 usuario.Contraseniausuariosistema = textBoxContrasenia.Text;
 

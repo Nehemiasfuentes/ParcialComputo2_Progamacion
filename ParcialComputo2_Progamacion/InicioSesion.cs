@@ -30,7 +30,7 @@ namespace ParcialComputo2_Progamacion
             Usuario usuario = new Usuario();
             usuario.Nombreusuariosistema = textBoxNombreUsuario.Text;
             usuario.Contraseniausuariosistema = textBoxContraseñaUsuario.Text;
-            usuario.Fechaderegistro = DateTime.Now;
+            usuario.Fechaderegistro = DateTime.Now.ToString();
             nombredeusuarioactivo = textBoxNombreUsuario.Text;
 
             if (usuario.Iniciar_sesion_usuarios() == true)
