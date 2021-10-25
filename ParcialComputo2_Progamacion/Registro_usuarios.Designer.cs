@@ -39,7 +39,8 @@ namespace ParcialComputo2_Progamacion
             this.textBoxNombreUsuario = new System.Windows.Forms.TextBox();
             this.textBoxContrasenia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RegisrarseBoton = new System.Windows.Forms.Button();
+            this.Iniciarsesion_botton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNombre
@@ -142,25 +143,40 @@ namespace ParcialComputo2_Progamacion
             this.label4.TabIndex = 8;
             this.label4.Text = "Contraseña Usuario:";
             // 
-            // button1
+            // RegisrarseBoton
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(455, 184);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 139);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.RegisrarseBoton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RegisrarseBoton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisrarseBoton.Location = new System.Drawing.Point(455, 184);
+            this.RegisrarseBoton.Margin = new System.Windows.Forms.Padding(2);
+            this.RegisrarseBoton.Name = "RegisrarseBoton";
+            this.RegisrarseBoton.Size = new System.Drawing.Size(144, 52);
+            this.RegisrarseBoton.TabIndex = 10;
+            this.RegisrarseBoton.Text = "Registrar";
+            this.RegisrarseBoton.UseVisualStyleBackColor = false;
+            this.RegisrarseBoton.Click += new System.EventHandler(this.RegisrarseBoton_Click);
+            // 
+            // Iniciarsesion_botton
+            // 
+            this.Iniciarsesion_botton.AutoSize = true;
+            this.Iniciarsesion_botton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.Iniciarsesion_botton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Iniciarsesion_botton.Location = new System.Drawing.Point(439, 258);
+            this.Iniciarsesion_botton.Margin = new System.Windows.Forms.Padding(2);
+            this.Iniciarsesion_botton.Name = "Iniciarsesion_botton";
+            this.Iniciarsesion_botton.Size = new System.Drawing.Size(175, 52);
+            this.Iniciarsesion_botton.TabIndex = 11;
+            this.Iniciarsesion_botton.Text = "Inciar Sesion";
+            this.Iniciarsesion_botton.UseVisualStyleBackColor = false;
+            this.Iniciarsesion_botton.Click += new System.EventHandler(this.Iniciarsesion_botton_Click);
             // 
             // Registro_usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 366);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Iniciarsesion_botton);
+            this.Controls.Add(this.RegisrarseBoton);
             this.Controls.Add(this.textBoxContrasenia);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxNombreUsuario);
@@ -193,6 +209,7 @@ namespace ParcialComputo2_Progamacion
         private System.Windows.Forms.TextBox textBoxNombreUsuario;
         private System.Windows.Forms.TextBox textBoxContrasenia;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RegisrarseBoton;
+        private System.Windows.Forms.Button Iniciarsesion_botton;
     }
 }
