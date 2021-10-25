@@ -52,5 +52,11 @@ namespace ParcialComputo2_Progamacion
 
             return operaciones_Base_De_Datos.Obtenerinformacion_solicitada(consultasql);
         }
+        public void Nuevo_usuario_sistema()
+        {
+            string consultasql = "INSERT INTO account(codUser, firstname, lastname, email, registerDate, username, password)" +
+                   "VALUES ('" + IDusuarios + "', '" + Nombresusuario + "','" + Apellidosusuario + "','" + Correoelectronico + "','" + Fechaderegistro + "','" + Nombreusuariosistema + "','" + Contraseniausuariosistema + "')";
+            operaciones_Base_De_Datos.Ejecutar_consultas_a_base_de_datos(consultasql);
+        }
     }
 }
