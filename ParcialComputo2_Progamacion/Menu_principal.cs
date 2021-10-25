@@ -20,22 +20,33 @@ namespace ParcialComputo2_Progamacion
 
         private void Menu_principal_Load(object sender, EventArgs e)
         {
-
+            if (InicioSesion.nombredeusuarioactivo.ToString() != "Admin")
+            {
+                metroTile1.Visible = false;
+                metroTile2.Visible = false;
+            }
+            else
+            {
+                
+            }
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-
+            new Inicios_sesion_usuarios().Show();
+            this.Hide();
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-
+            new Datos_de_usuario().Show();
+            this.Hide();
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-
+            new Usuarios_registrados().Show();
+            this.Hide();
         }
     }
 }

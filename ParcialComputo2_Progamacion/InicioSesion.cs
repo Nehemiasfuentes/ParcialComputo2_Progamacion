@@ -13,6 +13,7 @@ namespace ParcialComputo2_Progamacion
 {
     public partial class InicioSesion : MetroFramework.Forms.MetroForm
     {
+        public static string nombredeusuarioactivo;
         public InicioSesion()
         {
             InitializeComponent();
